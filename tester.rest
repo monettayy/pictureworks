@@ -1,0 +1,45 @@
+GET http://127.0.0.1:8000/user/1
+
+
+###
+
+GET http://127.0.0.1:8000/user/2
+
+
+###
+
+GET http://127.0.0.1:8000/user/3
+
+
+###
+
+POST http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+    "id" : "1",
+    "password": "720DF6C2482218518FA20FDC52D4DED7ECC043AB",
+    "comments": "Example Comment"
+}
+
+
+###
+
+POST http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+    "id" : "1",
+    "password": "invalid password",
+    "comments": "Example Comment"
+}
+
+###
+
+POST http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+
+}
+
